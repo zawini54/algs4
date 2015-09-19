@@ -1,0 +1,46 @@
+[************************]sort
+[************]sort(lo,mid)
+[******]sort(lo,mid)
+[***]sort(lo,mid)
+[**]sort(lo,mid)
+ [**]sort(mid+1,hi)
+[***]merge
+   [***]sort(mid+1,hi)
+   [**]sort*(lo,mid)
+    [**]sort(mid+1,hi)
+   [***]merge
+[******]merge
+      [******]sort(mid+1,hi)
+      [***]sort(lo,mid)
+      [**]sort(lo,mid)
+       [**]sort(mid+1,hi)
+      [***]merge
+         [***]sort(mid+1,hi)
+         [**]sort(lo,mid)
+           [**]sort(mid+1,hi)
+         [***]merge
+      [******]merge
+[************]merge
+            [************]sort(mid+1,hi)
+            [******]sort(lo,mid)
+            [***]sort(lo,mid)
+            [**]sort(lo,mid)
+             [**]sort(mid+1,hi)
+            [***]merge
+               [***]sort(mid+1,hi)
+               [**]sort(lo,mid)
+                 [**]sort(mid+1,hi)
+               [***]merge
+            [******]merge
+                  [******]sort(mid+1,hi)
+                  [***]sort(lo,mid)
+                  [**]sort*(lo,mid)
+                    [**]sort(mid+1,hi)
+                  [***]merge
+                     [***]sort(mid+1,hi)
+                     [**]sort(lo,mid)
+                      [**]sort(mid+1,hi)
+                     [***]merge
+                  [******]merge
+            [************]merge
+[************************]merge
